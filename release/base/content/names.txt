@@ -1,0 +1,6 @@
+0:parchment
+1:bronze key
+10:silver key
+19:golden key
+9:healing potion ^9(right mouse button)
+18:Mana potion ^9(right mouse button)

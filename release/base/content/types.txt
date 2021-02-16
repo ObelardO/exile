@@ -1,0 +1,8 @@
+special:
+key:
+sword:2-6
+book:7-1
+helmet:2-5
+chestplate:2-5
+legs:2-5
+boots:2-3

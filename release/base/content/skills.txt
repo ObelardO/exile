@@ -1,0 +1,7 @@
+
+strength
+speed
+health
+protect
+attack
+mana
