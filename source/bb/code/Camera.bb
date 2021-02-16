@@ -1,6 +1,13 @@
+;==================================================================
+;Project Title:  exile
+;Author:         ObelardO
+;Email:          obelardos@gmail.com          
+;Notes:          camera code-file   
+;==================================================================
+
 Global Camera
 Global CameraBase
-Global CameraZPos = 500;500
+Global CameraZPos = 500
 Global CameraScale# = 50
 Global CameraNeedScale# = 50
 Global CameraPosX#
@@ -27,13 +34,6 @@ Function UpdateCamera()
 
 	CameraPosX = xEntityX(CameraBase)
 	CameraPosZ = xEntityZ(CameraBase)
-
-;	If Not ConsoleMode
-;		If xKeyDown(KEY_A) xMoveEntity CameraBase, -0.25, 0, 0
-;		If xKeyDown(KEY_D) xMoveEntity CameraBase,  0.25, 0, 0
-;		If xKeyDown(KEY_W) xMoveEntity CameraBase,  0, 0, 0.25
-;		If xKeyDown(KEY_S) xMoveEntity CameraBase,  0, 0,-0.25
-;	End If
 
 	If CameraPosX <> PlayerPosX CameraPosX = ExCurveValue(PlayerPosX, CameraPosX, 20)
 	If CameraPosZ <> PlayerPosZ CameraPosZ = ExCurveValue(PlayerPosZ, CameraPosZ, 20)

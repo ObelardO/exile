@@ -1,3 +1,9 @@
+;==================================================================
+;Project Title:  exile
+;Author:         ObelardO
+;Email:          obelardos@gmail.com          
+;Notes:          chests code-file   
+;==================================================================
 
 Const LevelChestStatus_CLOSED = 0
 Const LevelChestStatus_OPENED = 1

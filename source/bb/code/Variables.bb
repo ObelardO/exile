@@ -2,8 +2,6 @@
 ;Project Title:  exile     
 ;Author:         ObelardO
 ;Email:          obelardos@gmail.com          
-;Version:        ex_10.2a   
-;Date:           2.10.14   
 ;Notes:          system variables list   
 ;==================================================================
 

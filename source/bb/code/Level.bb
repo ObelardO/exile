@@ -1,8 +1,7 @@
 ;==================================================================
-;Project Title:  ?     
+;Project Title:  exile
 ;Author:         ObelardO
 ;Email:          obelardos@gmail.com          
-;Date:           06.02.15
 ;Notes:          level code-file   
 ;==================================================================
 

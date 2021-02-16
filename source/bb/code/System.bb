@@ -2,9 +2,7 @@
 ;Project Title:  exile     
 ;Author:         ObelardO
 ;Email:          obelardos@gmail.com          
-;Version:        ex_10.2a   
-;Date:           2.10.14   
-;Notes:          exile engine system   
+;Notes:          exile engine system code-file
 ;==================================================================
 
 Const EX_VARIABLE_TYPE_INTEGER = 0
@@ -17,8 +15,8 @@ Const EX_FILETYPE_FILE = 1
 Const EX_FILETYPE_DIR  = 2
 
 Const AUTOR$   = "ObelardO"
-Const VERSION$ = "ex_13.0a"
-Const PRODUCT$ = "?"
+Const VERSION$ = "ex_14.0a"
+Const PRODUCT$ = "exile"
 
 ;==================================================================
 

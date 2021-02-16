@@ -1,3 +1,9 @@
+;==================================================================
+;Project Title:  exile     
+;Author:         ObelardO
+;Email:          obelardos@gmail.com          
+;Notes:          player code-file   
+;==================================================================
 
 Const PlayerStatus_Wait    = 0
 Const PlayerStatus_MoveTo  = 1

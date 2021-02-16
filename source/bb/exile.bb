@@ -1,9 +1,11 @@
 ;==================================================================
-;Project Title:  Exile
+;Project Title:  exile     
 ;Author:         ObelardO
 ;Email:          obelardos@gmail.com          
 ;Date:           06.02.15
-;Notes:          Main code-file   
+;UPD Date:       16.02.21
+;version:        ex_14.0a
+;Notes:          Main code-file
 ;==================================================================
 
 Dim PlayerSkillName$(PlayerSkillCount)
@@ -54,6 +56,7 @@ Function InitGame()
 	
 	xSetEngineSetting("Splash::TilingTime", 0);1
 	xSetEngineSetting("Splash::AfterTilingTime", 0);3
+	xKey("M621B-533Ky-932nf-76e5s-M128Z")
 
 	SeedRnd(xMillisecs())
 
@@ -402,8 +405,6 @@ Function LauncherDrawSwicher(PosX, PosY, Variable, MousePosX, MousePosY, MouseHi
 End Function
 
 End
-
-
 
 
 

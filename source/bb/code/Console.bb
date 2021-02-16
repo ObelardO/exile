@@ -2,8 +2,6 @@
 ;Project Title:  exile     
 ;Author:         ObelardO
 ;Email:          obelardos@gmail.com          
-;Version:        ex_10.2a   
-;Date:           2.10.14   
 ;Notes:          exile console code-file   
 ;==================================================================
 
@@ -58,9 +56,6 @@ Function ConsoleCommand(Command$)
 
 				Case "start"
 				
-					;If ExGetVar("r_width")  < 800 ExSetVar "r_width",  800
-					;If ExGetVar("r_height") < 600 ExSetVar "r_height", 600
-					
 					Render_width  = ExStrToInt(ExGetVar("r_width"))
 					Render_Height = ExStrToInt(ExGetVar("r_height"))
 					Render_Depth  = ExStrToInt(ExGetVar("r_depth"))
@@ -93,7 +88,20 @@ Function ConsoleCommand(Command$)
 
 				Case "sysinfo"
 					DebugGetSystemInformation()
-			
+
+				Case "xpup"
+					PlayerTotalXP = 100
+
+				Case "help"
+					For EXCOM_INFO.EX_COMMAND = Each EX_COMMAND
+						ConsoleLog(String(" ", Len(VERSION + ": ")) + "^5" + EXCOM_INFO\Name + String(" ", 12 - Len(EXCOM_INFO\Name)) + "^1 - " + EXCOM_INFO\Help + " Usage: ^5" + EXCOM_INFO\Name + " ^6" + EXCOM_INFO\Pattern)
+					Next
+
+				Case "vars"
+					For VAR_INFO.EX_VARIABLE = Each EX_VARIABLE
+						ConsoleLog(String(" ", Len(VERSION + ": ")) + "^1" + VAR_INFO\Name + String(" ", 12 - Len(VAR_INFO\Name)) + " = ^6" + VAR_INFO\Value)
+					Next
+					
 
 				Case "stop"
 					End
@@ -114,18 +122,18 @@ Function InitConsole()
 End Function
 
 Function ResizeConsole()
-	ConsoleHeight     = ExStrToInt(ExGetVar("r_height")) * 0.5
+	ConsoleHeight     = 600;ExStrToInt(ExGetVar("r_height")) * 0.5
 	ConsoleLineHeight = xStringHeight("console")
 	ConsoleHeight     = ConsoleHeight - ConsoleHeight Mod ConsoleLineHeight
-	ConsoleWidth      = ExStrToInt(ExGetVar("r_width"))
+	ConsoleWidth      = 800;ExStrToInt(ExGetVar("r_width"))
 	ConsoleImage      = xCreateImage(ConsoleWidth, ConsoleHeight)
 	ConsoleLinesCount = ConsoleHeight / ConsoleLineHeight
 End Function
 
 Function UpdateConsole()
 
-	CurrentChar = xGetKey()	
-
+	CurrentChar = xGetKey()
+	
 	If CurrentChar = 184 Or CurrentChar = 96
 		ConsoleMode = 1 - ConsoleMode
 		CurrentChar = 0 

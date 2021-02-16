@@ -1,3 +1,10 @@
+;==================================================================
+;Project Title:  exile
+;Author:         ObelardO
+;Email:          obelardos@gmail.com          
+;Notes:          enemy code-file   
+;==================================================================
+
 Const EnemyDensity = 50
 
 Const EnemyKind_Skeleton = 0
